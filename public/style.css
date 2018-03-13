@@ -15,6 +15,11 @@ body {
   flex-direction: column;
 }
 
+#NavBar {
+  height: 3em;
+  background-color: red;
+}
+
 #map-container {
   display: flex;
   width: 100%;
@@ -23,28 +28,20 @@ body {
 }
 
 #map {
-  /* flex: 1 1 50%; */
-  height: 100vh;
+  flex: 1 1 70%;
+  z-index: 1;
 }
-
-#NavBar {
-  height: 3em;
-  background-color: red;
-}
-
 
 #side-panel {
-  flex: 1 1 50%;
+  flex: 1 1 30%;
 }
 
 #Activities {
-  height: 20em;
-  width: 20em;
+  height: 50%;
   background-color: blue;
 }
 
 #Itinerary {
-  height: 20em;
-  width: 20em;
+  height: 50%;
   background-color: green;
 }
