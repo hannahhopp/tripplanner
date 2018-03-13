@@ -5,17 +5,46 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #C1B5AD;
+  /* background-color: #C1B5AD; */
 }
 
 #MainContainer {
   display: flex;
   height: 100vh;
-  width: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+#map-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
 }
 
 #map {
+  /* flex: 1 1 50%; */
   height: 100vh;
-  width: 100vw;
 }
 
+#NavBar {
+  height: 3em;
+  background-color: red;
+}
+
+
+#side-panel {
+  flex: 1 1 50%;
+}
+
+#Activities {
+  height: 20em;
+  width: 20em;
+  background-color: blue;
+}
+
+#Itinerary {
+  height: 20em;
+  width: 20em;
+  background-color: green;
+}
