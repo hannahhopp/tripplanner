@@ -45,3 +45,12 @@ body {
   height: 50%;
   background-color: green;
 }
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+#it-title-bar {
+  background-color: yellow;
+}
