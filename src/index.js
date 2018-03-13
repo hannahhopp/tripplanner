@@ -1,5 +1,5 @@
 const mapboxgl = require("mapbox-gl");
-require('./marker');
+const buildMarker = require('./marker');
 
 mapboxgl.accessToken = "pk.eyJ1Ijoib25pZmF1eCIsImEiOiJjamVxMmxsbTIwMmp3MzNwZnk0Nm1taDFsIn0.yC6izMsKXtTQcUL3FBbEcA";
 
@@ -9,6 +9,10 @@ const map = new mapboxgl.Map({
   zoom: 12, // starting zoom
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
+
+const marker = buildMarker("hotels", [-74.009151, 40.705086]);
+
+marker.addTo(map)
 
 module.exports = map;
 
